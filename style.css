@@ -11,12 +11,19 @@ body {
 }
 
 header {
-  background: #000;
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
+  text-align: center;
+  padding: 30px 0; /* space above and below the logo */
+  background-color: #fff; /* or keep it transparent/dark based on your theme */
+}
+
+.main-logo {
+  width: 200px;       /* bigger logo */
+  height: 200px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* keeps it looking clean */
+  display: inline-block;
+}
+
 }
 
 nav {

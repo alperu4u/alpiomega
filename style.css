@@ -132,3 +132,9 @@ footer {
   font-size: 1.25rem;
   font-weight: 400;
 }
+.tile img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}

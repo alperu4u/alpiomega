@@ -138,3 +138,34 @@ footer {
   object-fit: cover;
   display: block;
 }
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.tile {
+  background: white;
+  box-shadow: 0 3px 8px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tile img {
+  width: 100%;
+  height: 180px;           /* This is key */
+  object-fit: cover;       /* This crops the image to fill the box */
+  display: block;
+}
+
+.tile h3 {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}

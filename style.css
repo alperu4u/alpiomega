@@ -33,11 +33,20 @@ nav {
   height: 40px;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
+.nav-links a {
+  color: #00B4B4; /* turquoise like the "O" in Omega */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
 }
+
+.nav-links a:hover {
+  background-color: rgba(0, 180, 180, 0.1);
+}
+
 
 .nav-links {
   list-style: none;

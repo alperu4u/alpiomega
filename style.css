@@ -233,4 +233,28 @@ footer {
   display: block;
   margin: 0 auto;
 }
+.workout-detail {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.workout-detail h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.workout-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.workout-images img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 

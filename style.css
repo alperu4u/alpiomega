@@ -215,10 +215,22 @@ footer {
 .center-tile {
   justify-content: center;
 }
+.programs-coming-soon {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.programs-coming-soon h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
 .programs-coming-soon img {
   width: 100%;
   height: auto;
-  display: block;
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 

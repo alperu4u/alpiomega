@@ -257,4 +257,24 @@ footer {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+.back-button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.back-button a {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.back-button a:hover {
+  background-color: #444;
+}
+
 

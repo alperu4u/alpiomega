@@ -326,5 +326,19 @@ footer {
 .contact-section button:hover {
   background-color: #008b8b;
 }
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #00B4B4; /* turquoise like the brand */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #008080; /* darker turquoise on hover */
+}
 
 

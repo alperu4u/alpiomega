@@ -341,43 +341,42 @@ footer {
   color: #008080; /* darker turquoise on hover */
 }
 
+/* === SHARE BUTTONS === */
 .share-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
   margin-top: 40px;
-  padding: 20px;
-  background: #f4f4f4;
-  border-radius: 8px;
-  text-align: center;
 }
 
 .share-buttons p {
+  width: 100%;
   font-weight: bold;
   margin-bottom: 10px;
-  font-size: 1.1rem;
 }
 
 .share-buttons a,
 .share-buttons button {
-  margin: 6px;
-  padding: 10px;
-  background-color: #00B4B4;
-  color: #fff;
+  background-color: #00bfb3; /* ALPiOmega turquoise */
+  color: white;
   border: none;
-  text-decoration: none;
+  padding: 12px;
   border-radius: 50%;
   font-size: 18px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .share-buttons a:hover,
 .share-buttons button:hover {
-  background-color: #008080;
+  background-color: #019e94;
 }
 
-
-
+.share-buttons i {
+  font-size: 16px;
+}

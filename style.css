@@ -341,4 +341,43 @@ footer {
   color: #008080; /* darker turquoise on hover */
 }
 
+.share-buttons {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.share-buttons p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.share-buttons a,
+.share-buttons button {
+  margin: 6px;
+  padding: 10px;
+  background-color: #00B4B4;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  transition: background 0.3s ease;
+}
+
+.share-buttons a:hover,
+.share-buttons button:hover {
+  background-color: #008080;
+}
+
+
 

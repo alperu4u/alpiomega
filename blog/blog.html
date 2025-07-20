@@ -60,6 +60,23 @@
     <div class="social-links">
   <a href="https://www.instagram.com/alpiomega/" target="_blank" rel="noopener">Instagram</a>
 </div>
+    <button class="share-button" onclick="shareContent()">Share This</button>
+
+<script>
+  function shareContent() {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: "Check out this post!",
+        url: window.location.href
+      })
+      .then(() => console.log('Shared successfully'))
+      .catch((error) => console.error('Sharing failed:', error));
+    } else {
+      alert("Your browser doesn’t support sharing. Try on a mobile device.");
+    }
+  }
+</script>
 
   </footer>
 

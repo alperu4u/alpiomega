@@ -106,3 +106,20 @@
 
 <p>In times of fear, choose hope. In moments of doubt, return to your values. They will guide you through life’s twists and turns with grace and strength.</p>
 
+<button class="share-button" onclick="shareContent()">Share This</button>
+
+<script>
+  function shareContent() {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: "Check out this post!",
+        url: window.location.href
+      })
+      .then(() => console.log('Shared successfully'))
+      .catch((error) => console.error('Sharing failed:', error));
+    } else {
+      alert("Your browser doesn’t support sharing. Try on a mobile device.");
+    }
+  }
+</script>

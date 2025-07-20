@@ -138,6 +138,23 @@
       <li>Train with intent: Lift heavy, focus on progressive overload, and don’t overdo cardio if bulking.</li>
       <li>Re-evaluate every 4–6 weeks and adjust based on your results.</li>
     </ul>
+    <button class="share-button" onclick="shareContent()">Share This</button>
+
+<script>
+  function shareContent() {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: "Check out this post!",
+        url: window.location.href
+      })
+      .then(() => console.log('Shared successfully'))
+      .catch((error) => console.error('Sharing failed:', error));
+    } else {
+      alert("Your browser doesn’t support sharing. Try on a mobile device.");
+    }
+  }
+</script>
   </main>
 </body>
 </html>

@@ -105,33 +105,24 @@
     <p>So today, I invite you: acknowledge your fears, but don’t let them stop you. Nourish your hope, and let it light your path forward.</p>
     <p><strong>Your next step awaits—will you take it?</strong></p>
   </div>
-<div class="share-buttons">
-  <p>Share this post:</p>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://alpiomega.com/blog/fear-and-hope.html"
-     target="_blank" rel="noopener" aria-label="Share on Facebook">
-    <i class="fab fa-facebook"></i>
-  </a>
-  <a href="https://twitter.com/intent/tweet?url=https://alpiomega.com/blog/fear-and-hope.html"
-     target="_blank" rel="noopener" aria-label="Share on Twitter">
-    <i class="fab fa-x-twitter"></i>
-  </a>
-  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://alpiomega.com/blog/fear-and-hope.html"
-     target="_blank" rel="noopener" aria-label="Share on LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="https://www.instagram.com/alpiomega/" target="_blank" rel="noopener" aria-label="View on Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
-  <a href="https://www.threads.net/@alpiomega" target="_blank" rel="noopener" aria-label="View on Threads">
-    <i class="fab fa-threads"></i>
-  </a>
-  <button onclick="copyLink()" aria-label="Copy Link">
-    <i class="fas fa-link"></i>
-  </button>
-</div>
+<button class="share-button" onclick="shareContent()">Share This</button>
 
-<!-- Link to external JS -->
-<script src="../script.js"></script>
+<script>
+  function shareContent() {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: "Check out this post!",
+        url: window.location.href
+      })
+      .then(() => console.log('Shared successfully'))
+      .catch((error) => console.error('Sharing failed:', error));
+    } else {
+      alert("Your browser doesn’t support sharing. Try on a mobile device.");
+    }
+  }
+</script>
+
 </body>
 </html>
 

@@ -163,13 +163,23 @@
 
       <p><strong>They’ll catch up when they’re ready.</strong></p>
 
-      <div class="share-buttons">
-        <p>Share this post:</p>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://alpiomega.com/blog/stoplabelingstartgrowing.html" target="_blank">Facebook</a>
-        <a href="https://twitter.com/intent/tweet?url=https://alpiomega.com/blog/stoplabelingstartgrowing.html&text=Stop%20Labeling,%20Start%20Growing" target="_blank">X</a>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://alpiomega.com/blog/stoplabelingstartgrowing.html" target="_blank">LinkedIn</a>
-        <a href="#" onclick="navigator.clipboard.writeText('https://alpiomega.com/blog/stoplabelingstartgrowing.html'); alert('Link copied to clipboard!'); return false;">Copy Link</a>
-      </div>
     </main>
+    <button class="share-button" onclick="shareContent()">Share This</button>
+
+<script>
+  function shareContent() {
+    if (navigator.share) {
+      navigator.share({
+        title: document.title,
+        text: "Check out this post!",
+        url: window.location.href
+      })
+      .then(() => console.log('Shared successfully'))
+      .catch((error) => console.error('Sharing failed:', error));
+    } else {
+      alert("Your browser doesn’t support sharing. Try on a mobile device.");
+    }
+  }
+</script>
   </body>
 </html>

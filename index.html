@@ -108,10 +108,103 @@ Now, it’s time to lead by example. This space exists to share that journey—w
   </div>
 </section>
 
-    <section id="programs" class="programs-coming-soon">
-  <h2>Programs</h2>
-  <img src="assets/fitnesscomingsoon.png" alt="Fitness Coming Soon" />
+    <!-- ===== Programs: Dark Mosaic Section ===== -->
+<section id="programs-mosaic" data-lang-default="en">
+  <div class="pm-wrap">
+    <!-- Header / Language Toggle -->
+    <header class="pm-header">
+      <h2 class="pm-title" data-i18n="title">Programs</h2>
+      <div class="pm-lang">
+        <button class="pm-lang-btn" data-lang="en" aria-pressed="true">EN</button>
+        <button class="pm-lang-btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </header>
+
+    <p class="pm-sub" data-i18n="subtitle">
+      Train smarter. Look athletic. Perform like a pro.
+    </p>
+
+    <!-- Mosaic grid (3 tiles) -->
+    <div class="pm-grid">
+      <!-- Nutrition Plans (featured) -->
+      <article class="pm-card pm-feature">
+        <div class="pm-media" style="--bg:url('/assets/nutrition-dark.png')"></div>
+        <div class="pm-body">
+          <h3 class="pm-card-title" data-i18n="tile_plans_title">Personalized Nutrition Plans</h3>
+          <p class="pm-card-desc" data-i18n="tile_plans_desc">
+            3-month plan tailored to your goals, foods you enjoy, and schedule.
+          </p>
+          <ul class="pm-bullets">
+            <li data-i18n="tile_plans_b1">Macro targets + weekly adjustments</li>
+            <li data-i18n="tile_plans_b2">Simple grocery lists & swaps</li>
+            <li data-i18n="tile_plans_b3">Messaging check-ins for accountability</li>
+          </ul>
+          <div class="pm-price">
+            <span class="pm-price-main" data-i18n="tile_plans_price">$300</span>
+            <span class="pm-price-sub" data-i18n="tile_plans_terms">/ 3 months</span>
+          </div>
+          <div class="pm-cta-row">
+            <a class="pm-btn pm-btn-primary" href="#" data-i18n="tile_plans_cta">Get My Plan</a>
+            <a class="pm-btn pm-btn-ghost" href="#" data-i18n="tile_plans_more">What’s included?</a>
+          </div>
+        </div>
+        <div class="pm-badge" data-i18n="badge_best">Best Seller</div>
+      </article>
+
+      <!-- Group Workouts -->
+      <article class="pm-card">
+        <div class="pm-media" style="--bg:url('/assets/group-dark.png')"></div>
+        <div class="pm-body">
+          <h3 class="pm-card-title" data-i18n="tile_group_title">Group Workouts</h3>
+          <p class="pm-card-desc" data-i18n="tile_group_desc">
+            High-energy sessions for strength, agility, and conditioning.
+          </p>
+          <ul class="pm-bullets">
+            <li data-i18n="tile_group_b1">Progressive weekly blocks</li>
+            <li data-i18n="tile_group_b2">Athletic movement & plyometrics</li>
+            <li data-i18n="tile_group_b3">Community & accountability</li>
+          </ul>
+          <div class="pm-cta-row">
+            <a class="pm-btn pm-btn-primary" href="#" data-i18n="tile_group_cta">Join Waitlist</a>
+            <a class="pm-btn pm-btn-ghost" href="#" data-i18n="tile_group_more">Schedule & details</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 1-on-1 Coaching -->
+      <article class="pm-card">
+        <div class="pm-media" style="--bg:url('/assets/oneonone-dark.png')"></div>
+        <div class="pm-body">
+          <h3 class="pm-card-title" data-i18n="tile_1on1_title">1-on-1 Coaching</h3>
+          <p class="pm-card-desc" data-i18n="tile_1on1_desc">
+            Customized training for your body, goals, and schedule.
+          </p>
+          <ul class="pm-bullets">
+            <li data-i18n="tile_1on1_b1">Movement screen & plan design</li>
+            <li data-i18n="tile_1on1_b2">Strength + speed + mobility</li>
+            <li data-i18n="tile_1on1_b3">Performance tracking</li>
+          </ul>
+          <div class="pm-cta-row">
+            <a class="pm-btn pm-btn-primary" href="#" data-i18n="tile_1on1_cta">Book Consult</a>
+            <a class="pm-btn pm-btn-ghost" href="#" data-i18n="tile_1on1_more">Packages & pricing</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- How it works -->
+    <div class="pm-steps">
+      <div class="pm-step"><div class="pm-step-num">1</div><div class="pm-step-text" data-i18n="step1">Assess: goals, schedule, preferences.</div></div>
+      <div class="pm-step"><div class="pm-step-num">2</div><div class="pm-step-text" data-i18n="step2">Plan: nutrition + training mapped to your life.</div></div>
+      <div class="pm-step"><div class="pm-step-num">3</div><div class="pm-step-text" data-i18n="step3">Execute: coaching, accountability, adjustments.</div></div>
+      <div class="pm-step"><div class="pm-step-num">4</div><div class="pm-step-text" data-i18n="step4">Track: metrics & weekly wins.</div></div>
+    </div>
+  </div>
 </section>
+
+<!-- Make sure script.js is already linked in your <body> or <head>: -->
+<script src="/script.js" defer></script>
+
 
 <section id="contact" class="contact-section">
   <h2>Contact Me for Personalized training, and nutrition plan based on your own stats!</h2>
